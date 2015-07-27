@@ -1,0 +1,111 @@
+<html>
+  <head>
+
+  	<!--GOOGLE FEED API -->
+    <script type="text/javascript" src="js/jsapi.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/podcastFunctions.js"></script>
+
+  </head>
+
+  <body onload="">
+  	  <div class="navbar navbar-default navbar-top" role="navigation">
+	  	<div class="navbar-header">
+	  		<div align="center">
+	  			<h2>You can get the episodes from a RSS podcast by typing his xml url</h2>
+	  		</div>
+	  		<div class="container" align="center" >
+				<form action="" method="" class="form-inline">
+					<div class="form-group">
+						<label for="url">URL: </label>
+				  		<input type="text" id="urlTextField" length="500" required class="form-control" placeholder="Enter a valid URL">
+				  	</div>
+				  	<div class="form-group">
+				 		<button type="button" name="getFeed" onclick="readRSS();" class="btn btn-info btn-lg">Find Podcast</button>
+				 	</div>
+				</form>
+			</div>
+	    </div>
+	  </div>
+  	
+
+	<div class="container">
+		<div id="titleDIV" class=""></div>
+		<div id="content" class="table-responsive">
+			<table align="center">
+				<tr>
+					<td style="vertical-align:top;" valign="left" width="300">
+						<div></div>
+						<div id="imageFeed" ></div>
+						<div>&nbsp;</div>
+						<div id="details" align="left" class="visible-lg"></div>
+					</td>
+
+					<td>
+						<table align="center">
+							<tr>
+								<td valign="top">
+									<div id="divAudio">
+										
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table id="contentTable" class="table table-hover">
+
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>	
+	</div>
+
+
+	<!-- Modal EMPTY-->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">ERROR</h4>
+	        </div>
+	        <div class="modal-body">
+	          <p>You must not leave empty the url field.</p>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	 <!--MODAL UNLOADABLE-->
+	 <div class="modal fade" id="myModal2" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">ERROR</h4>
+	        </div>
+	        <div class="modal-body">
+	          <p>The URL that you type can not be read.</p>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	
+  </body>
+</html>
