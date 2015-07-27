@@ -38,6 +38,8 @@ Structure of the project:
   Also there is a function to set the playlist of all the episodes to the Audio Player. These are loaded
   after of load the propertis of the File.
   
+  As a restriction, the javascript code only read url's with the protocol "HTTP:".
+  
 -OTHER FILES
   The other Files contains the java script libraries and the API of Google Feed (this used to load de XML File),
   these are contained inside the folder "JS" and in the folder named "css" are the css files used to the design
