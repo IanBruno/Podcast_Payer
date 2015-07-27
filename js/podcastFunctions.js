@@ -273,6 +273,8 @@ function readRSS() {
     if (url.length == 0 || url == null) {
         $("#myModal").modal()
     } else
+        if(!url.startsWith('http://'))
+            url="http://"+url;
         google.setOnLoadCallback(initializeXML(url));
     //readXML(url);
 
