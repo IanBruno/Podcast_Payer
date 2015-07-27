@@ -11,16 +11,17 @@
 	<script src="js/jquery.magnific-popup.js"></script>
     <script src="js/podcastFunctions.js"></script>
 
+
   </head>
 
   <body onload="">
-  	  <div class="navbar navbar-default navbar-top" role="navigation">
-	  	<div class="navbar-header">
+  	  <div class="navbar navbar-default navbar-top" role="navigation" align="center">
+	  	<div class="navbar-header" align="center">
 	  		<div align="center">
 	  			<h2>You can get the episodes from a RSS podcast by typing his xml url</h2>
 	  		</div>
 	  		<div class="container" align="center" >
-				<form action="" method="" class="form-inline">
+				<form action="" onSubmit="readRSS(); return false;" method="" class="form-inline">
 					<div class="form-group">
 						<label for="url">URL: </label>
 				  		<input type="text" id="urlTextField" length="500" required class="form-control" placeholder="Enter a valid URL">
@@ -47,7 +48,7 @@
 					</td>
 
 					<td>
-						<table align="center">
+						<table align="center" >
 							<tr>
 								<td valign="top">
 									<div id="divAudio">
@@ -56,7 +57,10 @@
 								</td>
 							</tr>
 						</table>
-						<table id="contentTable" class="table table-hover">
+						<div>
+							<br>
+						</div>
+						<table id="contentTable" style="border-spacing:  10px 15px;">
 
 						</table>
 					</td>
